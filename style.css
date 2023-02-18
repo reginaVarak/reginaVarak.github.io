@@ -45,7 +45,7 @@ header nav ul li {
 
 nav {
     margin-top: 45px;  /*отступ сверху для меню*/
-    margin-left: 30%;   /*отступ слева от shaurmaMa для меню*/
+    margin-left: 20%;   /*отступ слева от shaurmaMa для меню*/
 }
 
 /* настройки меню*/
@@ -437,11 +437,11 @@ main .main_about {   /*отступ сверху и снизу для текст
 }
 
 .column1 {
-    margin-left: -70px;
+    margin-left: -140px;
 }
 
 .column2 {
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .cost {
@@ -552,56 +552,27 @@ footer {
     border-radius: 50%;
 }
 
-.topbutton { 
-    position: fixed;
-    background-color: #eb911a6b;
-    right: 20px;
-    bottom: 10px;
-    border-radius: 50%;
-    cursor: pointer; /* вид курсора */
-    display: flex; 
-    align-items: center;  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
-    justify-content: center; /* выравниваем элементы внутри элемента по центру вдоль главной оси */
-    width: 50px;
-    height: 50px;
-  }
-  
-  .topbutton::before {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
-    background-image: url(img/стрелка.svg);
-  }
   
   
   
 
 
 
-/* меню превращается в три черточки, когда уменьшаем экран */
-@media (hover: hover) and (pointer: fine) {
-    .topbutton:hover {
-      background-color: #eb901a; /* цвет заднего фона при наведении */
-    }
-  }
-@media (hover: hover) and (pointer: fine) {
-    .btn-up:hover {
-      background-color: #eb901a; /* цвет заднего фона при наведении */
-    }
-  }
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1200px) {/* меню превращается в три черточки, когда уменьшаем экран */
     nav {
         margin-left: 20%;
     }
 }
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 500px) {
     nav {
         margin-left: 10%;
     }
 }
 @media screen and (max-width: 1010px) {
+    header {
+        height: 25%;
+    }
     .topnav a{
         display: none;
     }
@@ -620,7 +591,7 @@ footer {
     }
     .topnav.responsive {      /*двигать меню*/
         position: relative;
-        top: 35px;
+        top: 100px;
         left: -20px;
     }
     header .topnav.responsive {  /*при нажатии на кнопку какая будет высота*/
@@ -643,7 +614,7 @@ footer {
     
 
     main .main_welcome {
-        padding:  100px 0 100px 0;
+        padding:  100px 0 200px 0;
         padding-top: 350px;
     }
     main .main_welcome p {   /*когда окно уменьшается текст тоже*/
@@ -676,7 +647,7 @@ footer {
         font-size: 20px;
     }
 
-.team{
+    .team{
     margin-left: auto;
     margin-right: auto;
     width: 8em;
@@ -684,8 +655,8 @@ footer {
     .team_cards {
         grid-template-columns: auto;
         margin-left: auto;
-    margin-right: auto;
-    width: 6em;
+        margin-right: auto;
+        width: 6em;
     }
 
 
@@ -712,8 +683,6 @@ footer {
 
     .kofe_right {
         text-align: center;
-        /* margin-left: 0; */
-        
     }
     .kofe_left img {
         margin-left: auto;
@@ -722,12 +691,12 @@ footer {
     }
     .kofe_right li {
         text-align: left;
-        margin-left: 50px;
+        margin-left: 90px;
         
     }
     .kofe_right h1 {
         margin-top: 10px;
-        font-size: 20px;
+        font-size: 30px;
         margin-left: auto;
         margin-right: auto;
         margin: auto;
@@ -740,8 +709,6 @@ footer {
 
     .sous_left {
         text-align: center;
-        /* margin-left: 0; */
-        
     }
     .sous_right img {
         margin-left: auto;
@@ -750,15 +717,13 @@ footer {
     }
     .sous_left li {
         text-align: left;
-        margin-left: 50px;
+        margin-left: 90px;
         
     }
     .sous_left h1 {
         margin-top: 10px;
         font-size: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin: auto;
+        margin-left: 100px;
     }
     
 }
