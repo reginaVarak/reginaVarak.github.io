@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*логотип*/
+.header_logo {
+    text-transform: uppercase;
+    color: #eb901a;
+    font-weight: 800;  
+    font-size: 27px;
+    cursor: pointer;
+    margin-top: 36px; /*отступ сверху для shaurmaMa*/
+    margin-left: 10%; /*отступ слева для shaurmaMa*/
+}
+
+.header_logo a {
+    color: #eb901a;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+nav {
+    margin-top: 45px;  /*отступ сверху для меню*/
+    margin-left: 30%;   /*отступ слева от shaurmaMa для меню*/
+}
+
+/* настройки меню*/
+.topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 16px;
+    font-size: 14px;  /*настройка иконки меню*/
+    font-weight: bold; /* жирный шрифт*/
+}
+
+/* подчеркивание когда наводим стрелку */
+.topnav a:hover {
+    border-bottom: 3px solid #eb901a; 
+}
+
+.topnav .icon {
+    display: none;
+}
+/*раскрывающееся окно*/
+
+.menu_1 {
+    display: block;
+}
+
+.menu_1 li {
+    width: 200px;
+    list-style: none;
+    background: #0000008e;
+    position: relative;
+    
+}
+
+.menu_1 a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    height:  30px;
+    line-height: 20px;
+}
+
+.menu_1 a:hover {
+    background: #0000008e;
+}
+.menu_1 ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu_1 li:hover ul {
+    display: block;
+}  
+
+/* убрали иконку меню */
+.topnav .icon {
+    display: none;
+}
+
+main {     /*добро пожаловать*/
+    display: flex;
+    flex-direction: column;  /*что-бы текст располагался горизонтально в колонку*/
+    width: 100%;
+}
+
+main .main_welcome {  
+    background-color: #000;
+    text-align: center;
+    padding: 300px 0 410px 0;   /*размеры квадрата где будет находиться текст*/
+}
+
+main .main_welcome h1{  
+    display: contents;
+    color: #ffffff;
+    font-size: 44px;
+}
+
+main .main_welcome h1:after {
+    display: none;
+}
+
+main .main_welcome p{  
+    color: #999;
+    font-size: 20px;
+}
+
+.mycompany {
+    color: #eb901a;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+main .main_about {   /*отступ сверху и снизу для текста и картинки*/
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.about_right {
+    margin-left: 175px;
+}
+
+ .about_right h1 {   
+    color: #eb901a;
+} 
+
+.about_right h1::after {
+    display: none;
+}
+
+.about_right p {
+    margin: 30px 0 50px 0;
+    color: #1d1d1d;
+}
+
+.about_right h2 {
+    display: inline-block;
+    padding-bottom: 20px;   
+    color: #eb901a;    
+}
+
+.about_right li {
+    background: url(img/место.png) 0px no-repeat;   /*иконка место*/
+    padding-left: 25px;
+    color: #6c6c6c;
+    margin-top: 10px;
+}
+
+.mw-100 {
+    min-width: 100%;
+}
+
+.main_team {
+    background: #000;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    color: #ffffff;
+}
+
+.main_team h1 {
+    display: inline;
+    color: #eb901a;
+    text-align: center;
+    font-size: 44px;
+    padding-bottom: 15px;
+}
+
+.photo1 {
+    background: url(img/классическая\ шаурма.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo2 {
+    background: url(img/сырная\ шаурма.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo3 {
+    background: url(img/гриль\ шаурма.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo4 {
+    background: url(img/веги\ шаурма.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo5 {
+    background: url(img/бигтейсти\ шаурма.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.team_cards {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto auto; 
+    grid-column-gap: 40px;
+    margin-left: -45px;
+}
+
+.card {
+    margin: 0 40px;
+    margin-left: 4px;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.position {   /*цена*/
+    font-size: 20px;
+    color: #eb901a;
+    margin-bottom: 15px;  /*разmер от текста до цены*/
+}
+
+.about_position {
+    font-size: 14px;
+    width: 140%;
+    margin-left: -35px;
+}
+
+.main_services {  /*закрытая шаурма*/
+    background: #fdfdfd;
+    text-align: center;
+    padding: 150px 0 150px 0;
+    color: #000000;
+}
+
+.main_services h1 {
+    text-align: center;
+    font-size: 44px;
+    padding-bottom: 10px;
+    color: #eb901a;
+}
+
+.photo6 {
+    background: url(img/батыр\ закрытая\ шаурма.png);
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo7 {
+    background: url(img/с\ ананасом\ закрытая\ шаурма.png);
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo8 {
+    background: url(img/секрет\ ненейки\ звкрытая\ шаурма.png);
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.services_cards {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto; 
+    grid-column-gap: 15px;
+    margin-left: 40px;
+}
+
+.services_card {
+    margin: 0 40px;
+    margin-left: 4px;
+}
+
+.name_2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.position_2 {   /*цена*/
+    font-size: 20px;
+    color: #eb901a;
+    margin-bottom: 15px;
+}
+
+.about_position_2 {
+    font-size: 14px;
+} 
+
+.photo9 {
+    background: url(img/картошка\ фри.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo10 {
+    background: url(img/картофельные\ дольки.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.photo11 {
+    background: url(img/нагетсы.png);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 29px auto;
+}
+
+.main_fry {
+    background: #000;
+    text-align: center;
+    padding: 150px 0 150px 0;
+    color: #ffffff;
+}
+
+.main_fry h1{
+    text-align: center;
+    font-size: 44px;
+    color: #eb901a;
+}
+
+.fry_cards { 
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto; 
+    grid-column-gap: 5px;
+    margin-left: 100px; 
+}
+
+.fry_card {
+    margin: 0 40px;
+    margin-left: 4px;
+}
+
+.name_2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about_position_3 {
+    font-size: 19px;
+    width: 140%;
+    margin-left: -45px; 
+    margin-top: 10px;
+}
+
+.fry {
+    color: #eb901a;
+}
+
+/*раздел кофе*/
+
+.kofe {   /*отступ сверху и снизу для текста и картинки*/
+    display: flex;
+    padding: 150px 0 150px 0;
+}
+
+.kofe_right {
+    margin-left: -50px;
+}
+
+ .kofe_right h1 {   
+    color: #eb901a;
+    display: inline-block;
+    margin-left: 158px; 
+    font-size: 40px;
+} 
+
+.kofe_right li {   
+    font-size: 19px;
+    padding-left: 25px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.photo12 {
+    min-width: 100%;
+    width: 600px;
+    height: 350px;
+    margin-left: -20%;
+}
+.columns {
+    display: flex;
+}
+
+.column1 {
+    margin-left: -70px;
+}
+
+.column2 {
+    margin-left: 50px;
+}
+
+.cost {
+    color: #eb901a;
+}
+
+.main_souses {  
+    background: #000000;
+    text-align: center;
+    padding: 95px 0 95px 0;
+    color: #eb901a;
+}
+
+.sous {   
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.sous_left {
+    margin-left: -50px;
+}
+
+.sous_left h1 {   
+    color: #eb901a;
+    display: inline-block;
+    margin-left: 158px;
+    font-size: 40px;
+}
+
+.sous_left li {   
+    font-size: 19px;
+    padding-left: 25px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.photo13 {
+    min-width: 100%;
+    width: 400px;
+    height: 350px;
+    margin-left: 60%;
+}
+.columns2 {
+    display: flex;
+}
+
+.column3 {
+    margin-left: 100px;
+}
+
+.cost {
+    color: #eb901a;
+}
+
+.main_contact {
+    background: #fdfdfd;
+    text-align: center;
+    padding: 100px 0 100px 0;
+    color: #000000;
+}
+
+.main_contact h1 {  
+    text-align: center;
+    font-size: 44px;
+    padding-bottom: 10px;
+    color: #eb901a;
+}
+
+.contacty {
+    margin: 0 40px;
+    margin-left: 4px;
+}
+.cont {
+    color: #eb901a;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.logo_footer {
+    text-align: center;
+    color: #eb901a;
+    font-weight: 1000;  
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo_footer p{
+    font-size: 10px;
+    color: #222222;
+}
+
+.icon img {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon img:hover {
+    background: #eb911a86;
+    border-radius: 50%;
+}
+
+.topbutton { 
+    position: fixed;
+    background-color: #eb911a6b;
+    right: 20px;
+    bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer; /* вид курсора */
+    display: flex; 
+    align-items: center;  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    justify-content: center; /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    width: 50px;
+    height: 50px;
+  }
+  
+  .topbutton::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url(img/стрелка.svg);
+  }
+  
+  
+  
+
+
+
+/* меню превращается в три черточки, когда уменьшаем экран */
+@media (hover: hover) and (pointer: fine) {
+    .topbutton:hover {
+      background-color: #eb901a; /* цвет заднего фона при наведении */
+    }
+  }
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #eb901a; /* цвет заднего фона при наведении */
+    }
+  }
+@media screen and (max-width: 1200px) {
+    nav {
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1105px) {
+    nav {
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1010px) {
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #ffffff;
+        font-size: 25px;
+    }
+    .menu_1 ul {
+        position: relative;
+    }
+    nav{
+        width: 30%;
+    }
+    .topnav.responsive {      /*двигать меню*/
+        position: relative;
+        top: 35px;
+        left: -20px;
+    }
+    header .topnav.responsive {  /*при нажатии на кнопку какая будет высота*/
+        height: 295px;
+    }
+    
+    .topnav.responsive a.icon {    /*двигать иконку меню*/
+        position: fixed;
+        right: 80px;
+        /* top: -132px; */
+        top: 9.5%;
+        /* left: 350px; */
+        left: 657px;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+
+    main .main_welcome {
+        padding:  100px 0 100px 0;
+        padding-top: 350px;
+    }
+    main .main_welcome p {   /*когда окно уменьшается текст тоже*/
+        font-size: 14px;
+    }
+    main .main_welcome h1{  /*когда окно уменьшается текст тоже*/
+        font-size: 25px;
+    }
+    .main_about {
+        max-width: 100%;
+    }
+    .main_about {
+        flex-direction: column;
+    }
+
+
+    .about_right {
+        text-align: center;
+        margin-left: 0;
+    }
+    .about_right li {
+        text-align: left;
+    }
+    .about_right h1 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .about_right h2 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+.team{
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+    .team_cards {
+        grid-template-columns: auto;
+        margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    }
+
+
+    .services_cards {
+        grid-template-columns: auto;
+    }
+
+    .main_fry h1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em;
+    }
+    .fry_cards {
+        grid-template-columns: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 14em;
+    }
+
+    .kofe {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .kofe_right {
+        text-align: center;
+        /* margin-left: 0; */
+        
+    }
+    .kofe_left img {
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto;
+    }
+    .kofe_right li {
+        text-align: left;
+        margin-left: 50px;
+        
+    }
+    .kofe_right h1 {
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+    }
+
+    .sous {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .sous_left {
+        text-align: center;
+        /* margin-left: 0; */
+        
+    }
+    .sous_right img {
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto;
+    }
+    .sous_left li {
+        text-align: left;
+        margin-left: 50px;
+        
+    }
+    .sous_left h1 {
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+    }
+    
+}
