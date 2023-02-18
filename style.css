@@ -571,7 +571,7 @@ footer {
 }
 @media screen and (max-width: 1010px) {
     header {
-        height: 25%;
+        height: 15%;
     }
     .topnav a{
         display: none;
